@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import Image from "next/image";
-import Lottie from "lottie-react";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
