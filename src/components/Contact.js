@@ -53,7 +53,7 @@ function Contact() {
                 for="email"
                 class="block text-sm font-medium leading-6 text-gray-900"
               >
-                Email address
+                E-Mail
               </label>
               <div class="mt-2">
                 <input
@@ -124,7 +124,7 @@ function Contact() {
                 for="city"
                 class="block text-sm font-medium leading-6 text-gray-900"
               >
-                Telephone
+                Telefon
               </label>
               <div class="mt-2">
                 <input
