@@ -11,48 +11,6 @@
   <p>Welcome to Fahrschulring! 👋</p>
 </div>
 
-<!-- Add CSS styles to the same Markdown file -->
-
-<style>
-@keyframes wave {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(20deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-20deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-.wave-animation {
-  display: inline-block;
-  animation-name: wave;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-</style>
-
-<!-- Add JavaScript code to the same Markdown file -->
-
-<script>
-window.addEventListener('DOMContentLoaded', () => {
-  const welcomeElement = document.querySelector('#about p');
-  const waveElement = document.createElement('span');
-  waveElement.textContent = '👋';
-  waveElement.classList.add('wave-animation');
-  welcomeElement.appendChild(waveElement);
-});
-</script>
-
 ## Getting Started
 
 Install:
