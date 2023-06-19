@@ -1,11 +1,67 @@
 [![fahrschulring-ci](https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml/badge.svg)](https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src="public/logo.jpg" alt="Logo" width="300">
+</div>
+
+
+<div id="about">
+  <h2>About</h2>
+  <p>Welcome to Fahrschulring! 👋</p>
+</div>
+
+<!-- Add CSS styles to the same Markdown file -->
+
+<style>
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.wave-animation {
+  display: inline-block;
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+</style>
+
+<!-- Add JavaScript code to the same Markdown file -->
+
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  const welcomeElement = document.querySelector('#about p');
+  const waveElement = document.createElement('span');
+  waveElement.textContent = '👋';
+  waveElement.classList.add('wave-animation');
+  welcomeElement.appendChild(waveElement);
+});
+</script>
 
 ## Getting Started
 
-First, run the development server:
+Install:
+
+```bash
+npm Install
+```
+
+Run the project:
 
 ```bash
 npm run dev
