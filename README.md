@@ -1,8 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![fahrschulring-ci](https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml/badge.svg)](https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+<div align="center">
+  <img src="public/logo.jpg" alt="Logo" width="300">
+</div>
+
+
+<div id="about">
+  <h2>About</h2>
+  <p>Welcome to Fahrschulring! 👋</p>
+</div>
 
 ## Getting Started
 
-First, run the development server:
+Install:
+
+```bash
+npm Install
+```
+
+Run the project:
 
 ```bash
 npm run dev
