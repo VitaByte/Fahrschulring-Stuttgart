@@ -1,5 +1,4 @@
-[![fahrschulring-ci](https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml/badge.svg)]
-(https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml)
+[![fahrschulring-ci](https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml/badge.svg)(https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml)]
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c64e20ae-b28c-416d-b929-0cedb4399628/deploy-status)](https://app.netlify.com/sites/fahrschulring/deploys)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
