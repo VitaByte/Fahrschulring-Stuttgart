@@ -1,3 +1,5 @@
+[![fahrschulring-ci](https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml/badge.svg?branch=main&event=status)](https://github.com/VitaByte/Fahrschulring-Stuttgart/actions/workflows/fahrschulring-ci.yml)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
