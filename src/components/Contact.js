@@ -48,7 +48,7 @@ function Contact() {
               </div>
             </div>
 
-            <div class="sm:col-span-4">
+            <div class="sm:col-span-3">
               <label
                 for="email"
                 class="block text-sm font-medium leading-6 text-gray-900"
@@ -65,7 +65,23 @@ function Contact() {
                 />
               </div>
             </div>
-
+            <div class="sm:col-span-3 ">
+              <label
+                for="city"
+                class="block text-sm font-medium leading-6 text-gray-900"
+              >
+                Telefon
+              </label>
+              <div class="mt-2">
+                <input
+                  type="tel"
+                  name="city"
+                  id="city"
+                  autocomplete="address-level2"
+                  class="block pl-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
             <div class="col-span-full">
               <label
                 for="street-address"
@@ -119,23 +135,7 @@ function Contact() {
                 />
               </div>
             </div>
-            <div class="sm:col-span-3 sm:col-start-1">
-              <label
-                for="city"
-                class="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Telefon
-              </label>
-              <div class="mt-2">
-                <input
-                  type="tel"
-                  name="city"
-                  id="city"
-                  autocomplete="address-level2"
-                  class="block pl-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
+
             <div class="col-span-full">
               <label
                 for="about"
