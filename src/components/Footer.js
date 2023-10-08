@@ -2,29 +2,29 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-green-300 dark:bg-gray-900">
+    <footer className="bg-green-300 dark:bg-green-500">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <span className="self-center mr-2 text-2xl font-semibold whitespace-nowrap text-gray dark:text-white">
+            <span className="self-center mr-2 text-2xl font-semibold whitespace-nowrap text-black dark:text-white">
               Fahrschulring
             </span>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">
                 Fahrschulklassen
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400 font-medium">
+              <ul className="text-black dark:text-black-400 font-medium">
                 <li className="mb-4">- A, A2, A1 und AM</li>
                 <li>- B/ BF17, B96, BE, C1</li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">
                 Adresse
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400 font-medium">
+              <ul className="text-black dark:text-black-400 font-medium">
                 <li>Fahrschulring Stuttgart</li>
                 <li>Frank Eibl</li>
                 <li>Hegelstraße 48</li>
@@ -32,10 +32,10 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-black uppercase dark:text-white">
                 Info
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400 font-medium">
+              <ul className="text-black dark:text-black-400 font-medium">
                 <li>Tel./Fax.: 0711 / 294100</li>
                 <li>Email: info@fahrschulring.de</li>
                 <li>Bürozeiten: Mo. - Do. ab 15:00 - 18:30 Uhr</li>
@@ -43,38 +43,14 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-black sm:mx-auto dark:border-black-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-black sm:text-center dark:text-black-400">
             © 2023 Fahrschulring Stuttgart. All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <svg
-              className="w-5 h-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fillRule="evenodd"
-                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.243 0-1.631.774-1.631 1.566V12h2.775l-.443 2.878h-2.332V22C18.343 21.129 22 16.991 22 12z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <svg
-              className="w-5 h-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
-            >
-              <path
-                fillRule="evenodd"
-                d="M12 2C6.486 2 2 6.486 2 12c0 5.514 4.486 10 10 10s10-4.486 10-10c0-5.514-4.486-10-10-10zm3.984 7.983h-1.969c-.422 0-.797.219-1.016.563l-.984 1.688-.984-1.688c-.219-.344-.594-.563-1.016-.563h-1.969v6h1.969c.422 0 .797-.219 1.016-.563l.984-1.687.984 1.687c.219.344.594.563 1.016.563h1.969v-6zm-3.984 4.032c-.981 0-1.781-.797-1.781-1.781 0-.981.797-1.781 1.781-1.781s1.781.797 1.781 1.781c0 .984-.797 1.781-1.781 1.781zm3 0c-.982 0-1.781-.797-1.781-1.781 0-.981.797-1.781 1.781-1.781s1.781.797 1.781 1.781c0 .984-.797 1.781-1.781 1.781zm3 0c-.982 0-1.781-.797-1.781-1.781 0-.981.797-1.781 1.781-1.781s1.781.797 1.781 1.781c0 .984-.797 1.781-1.781 1.781z"
-                clipRule="evenodd"
-              />
-            </svg>
-            <svg
-              className="w-5 h-5 text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              className="w-5 h-5 text-black hover:text-black-900 dark:hover:text-white"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
