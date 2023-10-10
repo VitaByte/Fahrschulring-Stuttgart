@@ -3,6 +3,7 @@
 import Description from "@/components/Description";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
+import Testimonials from "@/components/Testimonials";
 import React from "react";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         {/* description section */}
         <Description />
         <Stats />
+        <Testimonials/>
       </main>
     </>
   );

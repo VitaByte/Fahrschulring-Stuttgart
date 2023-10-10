@@ -17,7 +17,6 @@ function Contact() {
                 htmlFor="first-name"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Vorname
               </label>
               <div className="mt-2">
                 <input
@@ -25,130 +24,121 @@ function Contact() {
                   name="first-name"
                   id="first-name"
                   autoComplete="given-name"
-                  className="block w-full py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-600 focus:border-indigo-600 placeholder-gray-400 text-gray-900"
+                  className="block w-full py-2 rounded-md border border-gray-300 shadow-lg focus:ring-indigo-600 focus:border-indigo-600 placeholder-gray-400 text-gray-900"
+                  placeholder="Vorname"
+                  required
                 />
               </div>
             </div>
 
-            <div class="sm:col-span-3">
+            <div className="sm:col-span-3">
               <label
-                for="last-name"
-                class="block text-sm font-medium leading-6 text-gray-900"
+                htmlFor="last-name"
+                className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Nachname
               </label>
-              <div class="mt-2">
+              <div className="mt-2">
                 <input
                   type="text"
                   name="last-name"
                   id="last-name"
-                  autocomplete="family-name"
-                  class="block pl-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  autoComplete="family-name"
+                  className="block w-full py-2 rounded-md border border-gray-300 shadow-lg focus:ring-indigo-600 focus:border-indigo-600 placeholder-gray-400 text-gray-900"                  required
+                  placeholder="Nachname"
                 />
               </div>
             </div>
 
-            <div class="sm:col-span-3">
+            <div className="sm:col-span-3">
               <label
-                for="email"
-                class="block text-sm font-medium leading-6 text-gray-900"
+                htmlFor="email"
+                className="block text-sm font-medium leading-6 text-gray-900"
               >
-                E-Mail
               </label>
-              <div class="mt-2">
+              <div className="mt-2">
                 <input
                   id="email"
                   name="email"
                   type="email"
-                  autocomplete="email"
-                  class="block pl-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  autoComplete="email"
+                  className="block w-full py-2 rounded-md border border-gray-300 shadow-lg focus:ring-indigo-600 focus:border-indigo-600 placeholder-gray-400 text-gray-900"
+                  placeholder="E-Mail"
+                  required
                 />
               </div>
             </div>
-            <div class="sm:col-span-3 ">
+            
+            <div className="sm:col-span-3">
               <label
-                for="city"
-                class="block text-sm font-medium leading-6 text-gray-900"
+                htmlFor="mobile"
+                className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Telefon
               </label>
-              <div class="mt-2">
+              <div className="mt-2">
                 <input
                   type="tel"
-                  name="city"
-                  id="city"
-                  autocomplete="address-level2"
-                  class="block pl-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
-            <div class="col-span-full">
-              <label
-                for="street-address"
-                class="block text-sm font-medium leading-6 text-gray-900"
-              >
-                Anschrift (Straße, Hausnr.)
-              </label>
-              <div class="mt-2">
-                <input
-                  type="text"
-                  name="street-address"
-                  id="street-address"
-                  autocomplete="street-address"
-                  class="block pl-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  name="mobile"
+                  id="mobile"
+                  autoComplete="tel"
+                  className="block w-full py-2 rounded-md border border-gray-300 shadow-lg focus:ring-indigo-600 focus:border-indigo-600 placeholder-gray-400 text-gray-900"
+                  placeholder="Mobiltelefon"
+                  required
                 />
               </div>
             </div>
 
-            <div class="sm:col-span-3 sm:col-start-1">
+            <div className="sm:col-span-3">
               <label
-                for="city"
-                class="block text-sm font-medium leading-6 text-gray-900"
+                htmlFor="zip-code"
+                className="block text-sm font-medium leading-6 text-gray-900"
               >
-                PLZ
               </label>
-              <div class="mt-2">
+              <div className="mt-2">
                 <input
                   type="text"
-                  name="city"
-                  id="city"
-                  autocomplete="address-level2"
-                  class="block pl-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  name="zip-code"
+                  id="zip-code"
+                  autoComplete="postal-code"
+                  className="block w-full py-2 rounded-md border border-gray-300 shadow-lg focus:ring-indigo-600 focus:border-indigo-600 placeholder-gray-400 text-gray-900"
+                  placeholder="PLZ"
+                  required
                 />
               </div>
             </div>
 
-            <div class="sm:col-span-3">
+            <div className="sm:col-span-3">
               <label
-                for="region"
-                class="block text-sm font-medium leading-6 text-gray-900"
+                htmlFor="city"
+                className="block text-sm font-medium leading-6 text-gray-900"
               >
-                ORT
               </label>
-              <div class="mt-2">
+              <div className="mt-2">
                 <input
                   type="text"
-                  name="region"
-                  id="region"
-                  autocomplete="address-level1"
-                  class="block pl-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  name="city"
+                  id="city"
+                  autoComplete="address-level2"
+                  className="block w-full py-2 rounded-md border border-gray-300 shadow-lg focus:ring-indigo-600 focus:border-indigo-600 placeholder-gray-400 text-gray-900"
+                  placeholder="Ort"
+                  required
                 />
               </div>
             </div>
 
             <div className="col-span-full">
               <label
-                htmlFor="about"
+                htmlFor="message"
                 className="block text-sm font-medium leading-6 text-gray-900"
               >
-                Ihre Nachricht
               </label>
-              <div class="mt-2">
+              <div className="mt-2">
                 <textarea
-                  id="about"
-                  name="about"
+                  id="message"
+                  name="message"
                   rows="3"
-                  className="block w-full py-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-600 focus:border-indigo-600 placeholder-gray-400 text-gray-900"
+                  className="block w-full py-2 rounded-md border border-gray-300 shadow-lg focus:ring-indigo-600 focus:border-indigo-600 placeholder-gray-400 text-gray-900"
+                  placeholder="Ihre Nachricht..."
+                  required
                 ></textarea>
               </div>
             </div>
@@ -161,13 +151,13 @@ function Contact() {
           type="button"
           className="text-sm font-semibold leading-6 text-gray-900"
         >
-          Cancel
+          Stornieren
         </button>
         <button
-         type="submit"
-         className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus:ring-indigo-600 focus:ring-offset-indigo-600 focus:ring-offset-2 focus:outline-none"
+          type="submit"
+          className="rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus:ring-green-600 focus:ring-offset-green-600 focus:ring-offset-2 focus:outline-none"
         >
-          Save
+          Absenden
         </button>
       </div>
     </form>
