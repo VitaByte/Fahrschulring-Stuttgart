@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import test from "../../../public/other/vb_fs_logo.png";
 export default function Klassen() {
   const items = [
     {
@@ -126,36 +128,95 @@ export default function Klassen() {
       includedClasses: "keine",
     },
   ];
+  const [openItemIds, setOpenItemIds] = useState(new Set());
+
+  const handleToggle = (itemId) => {
+    setOpenItemIds((prevOpenItemIds) => {
+      const newOpenItemIds = new Set(prevOpenItemIds); // Create a new Set from the previous one
+      if (newOpenItemIds.has(itemId)) {
+        newOpenItemIds.delete(itemId); // If the item is already in the set, remove it (close it)
+      } else {
+        newOpenItemIds.add(itemId); // If the item is not in the set, add it (open it)
+      }
+      return newOpenItemIds;
+    });
+  };
   return (
-    <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-      <div className="px-4 sm:px-0">
-        <h1 className="text-base font-semibold leading-7 text-gray-900">
-          Ausbildung in allen Klassen
-        </h1>
-      </div>
-      <div className="mt-6 border-t border-gray-100">
-        <dl className="divide-y divide-gray-100">
-          {items.map((item,key) => (
-            <div key={key} className="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-              <dt className="text-base font-medium leading-6 text-gray-900">
-                {item.vehicleClass}
-              </dt>
-              <dd className="mt-1 text-base leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                {item.description}
-              </dd>
-              <dt className="text-base font-medium leading-6 text-gray-900"></dt>
-              <dd className="mt-1 text-base leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                <b>Mindestalter:</b> {item.ageRequirement}
-              </dd>
-              <dt className="text-base font-medium leading-6 text-gray-900"></dt>
-              {item.includedClasses && (
-                <dd className="mt-1 text-base leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
-                  <b>Eingeschlossene Klassen:</b> {item.includedClasses}
-                </dd>
-              )}
+    <div cl>
+      <h1 className="text-center text-2xl text-[#99CB66] mb-10">
+        Ausbildung in allen Klassen
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <div>
+          <img src="/other/vb_fs_logo.png" />
+        </div>
+        <div>
+          {items.map((item) => (
+            <div
+              className="mb-6"
+              key={item.vehicleClass}
+              id={`accordion-collapse-${item.vehicleClass} `}
+              data-accordion="collapse"
+            >
+              <h2 id={`accordion-collapse-heading-${item.id}`}>
+                <button
+                  type="button"
+                  className="flex items-center justify-between w-full p-5 text-left border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+                  aria-expanded={openItemIds.has(item.vehicleClass)}
+                  aria-controls={`accordion-collapse-body-${item.vehicleClass}`}
+                  onClick={() => handleToggle(item.vehicleClass)}
+                >
+                  <div className="flex gap-4 items-center">
+                    <span className="font-bold w-20">{item.vehicleClass}</span>
+                    {/* add image here likes this <img src={item.image} className="h-10 w-10 rounded-full" /> */}
+
+                    <img
+                      src="/other/vb_fs_logo.png"
+                      className="h-10 w-10 rounded-full"
+                    />
+                  </div>
+
+                  <svg
+                    data-accordion-icon
+                    className={`w-6 h-6 transform ${
+                      openItemIds.has(item.vehicleClass) ? "rotate-180" : ""
+                    }`}
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+              </h2>
+              <div
+                id={`accordion-collapse-body-${item.vehicleClass}`}
+                className={`transition duration-300 ease-in-out ${
+                  openItemIds.has(item.vehicleClass) ? "block" : "hidden"
+                }`}
+                aria-labelledby={`accordion-collapse-heading-${item.vehicleClass}`}
+              >
+                <div className="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                  {item.description}
+                  <div className="mt-2">
+                    <span className="font-bold">Mindestalter:</span>{" "}
+                    {item.ageRequirement}
+                  </div>
+                  <div className="mt-2">
+                    <span className="font-bold">Eingeschlossene Klassen:</span>{" "}
+                    {item.includedClasses}
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
-        </dl>
+        </div>
       </div>
     </div>
   );

@@ -40,10 +40,10 @@ export default function Team() {
   ];
 
   return (
-    <section className="bg-white dark:bg-gray-900">
+    <section className="bg-gray-900 dark:bg-gray-900">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center mb-8">
-          <h2 className="mb-4 text-2xl tracking-tight font-semibold text-gray-700 dark:text-white">
+          <h2 className="mb-4 text-2xl tracking-tight font-semibold text-white dark:text-white">
             Wir sind für euch da
           </h2>
         </div>
@@ -51,7 +51,7 @@ export default function Team() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
+              className="items-center bg-gray-800 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
             >
               <a href="#">
                 <img
@@ -61,10 +61,10 @@ export default function Team() {
                 />
               </a>
               <div className="p-5">
-                <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold tracking-tight text-white dark:text-white">
                   <a href="#">{member.name}</a>
                 </h3>
-                <span className="text-gray-500 dark:text-green-400">
+                <span className="text-[#99CB66]">
                   {member.role}
                 </span>
                 <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">

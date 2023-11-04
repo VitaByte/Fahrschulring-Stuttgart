@@ -74,8 +74,8 @@ function Navbar() {
               Klassen
             </a>
             <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
+                  href="/anfahrt"
+                  className="text-sm font-semibold leading-6 text-gray-900"
             >
               Anfahrt
             </a>
@@ -86,7 +86,7 @@ function Navbar() {
               Kontakt
             </a>
           </div>
-        
+       
         </nav>
         {isMenuOpen && (
           <div className="lg:hidden" role="dialog" aria-modal="true">
@@ -149,7 +149,7 @@ function Navbar() {
                   Klassen
                 </a>
                 <a
-                  href="#"
+                  href="/anfahrt"
                   className="block text-sm font-semibold leading-6 text-gray-900"
                 >
                   Anfahrt

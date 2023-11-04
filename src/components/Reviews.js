@@ -1,4 +1,3 @@
-// components/MyWidgetComponent.js
 import React, { useEffect } from 'react';
 
 const Reviews = () => {
