@@ -6,7 +6,7 @@ function Contact() {
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
           <div className="mx-auto max-w-screen-sm text-center mb-8">
-            <h2 className="mb-4 text-2xl tracking-tight font-semibold text-gray-700 dark:text-white">
+            <h2 className="mb-4 text-2xl tracking-tight font-semibold text-gray-700 dark:text-black">
               Hier könnt ihr uns eine Nachricht hinterlassen. Wir werden uns
               schnellstmöglich zurückmelden.
             </h2>

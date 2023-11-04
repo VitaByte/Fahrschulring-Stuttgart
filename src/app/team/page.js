@@ -64,7 +64,7 @@ export default function Team() {
                 <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">{member.name}</a>
                 </h3>
-                <span className="text-gray-500 dark:text-gray-400">
+                <span className="text-gray-500 dark:text-green-400">
                   {member.role}
                 </span>
                 <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
