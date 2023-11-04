@@ -156,18 +156,7 @@ function ImpressumPage() {
             Technischer Ansprechpartner, Gestaltung und Layout
           </h2>
           <p className="text-base text-gray-900">
-            VitaByte Webdesign &amp; Content Management
-            <br />
-            Internet:{" "}
-            <a
-              href="https://www.redk.de"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600"
-            >
-              www.redk.de
-            </a>
-            <br />
+            VitaByte Webdesign &amp; Content Management         
             E-Mail: info@vitabyte.com
           </p>
           <p className="text-base text-gray-900">
