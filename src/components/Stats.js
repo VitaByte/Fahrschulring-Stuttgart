@@ -32,7 +32,7 @@ function Stats() {
 
   const rating = 4.9;
   const students = useAnimatedCounter(15, 2000, startAnimation);
-  const assets = useAnimatedCounter(119, 2000, startAnimation);
+  const completedStudents = useAnimatedCounter(30000, 2000, startAnimation);
 
   const fullStars = useAnimatedCounter(Math.ceil(rating), 2000, startAnimation);
 
@@ -83,15 +83,15 @@ function Stats() {
                 Eingeschriebene Studierende pro Monat
             </dt>
             <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              {students}
+              +{students}
             </dd>
           </div>
           <div className="mx-auto flex max-w-xs flex-col gap-y-4">
             <dt className="text-base leading-7 text-gray-600">
-              Assets under holding
+                Studenten abgeschlossen
             </dt>
             <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              ${assets} trillion
+              +{completedStudents}
             </dd>
           </div>
           <div className="mx-auto flex max-w-xs flex-col gap-y-4">
